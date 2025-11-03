@@ -24,16 +24,16 @@ As senhas são **criptografadas com bcrypt**, garantindo segurança no armazenam
 
 ## Funcionalidades
 
-- ✅ **Cadastro de usuário** (`POST /cadastro`)  
+-  **Cadastro de usuário** (`POST /cadastro`)  
   Cria um novo usuário com nome, e-mail e senha criptografada.
 
-- ✅ **Login de usuário** (`POST /login`)  
+-  **Login de usuário** (`POST /login`)  
   Autentica o usuário e retorna um **token JWT**.
 
-- ✅ **Listagem de usuários (rota privada)** (`GET /listar-usuarios`)  
+-  **Listagem de usuários (rota privada)** (`GET /listar-usuarios`)  
   Acesso permitido **apenas com token válido**.
 
-- ✅ **Middleware de autenticação**  
+-  **Middleware de autenticação**  
   Verifica o token antes de permitir o acesso às rotas protegidas.
 
 ---
