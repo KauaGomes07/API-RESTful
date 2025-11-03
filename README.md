@@ -50,6 +50,7 @@ As senhas são **criptografadas com bcrypt**, garantindo segurança no armazenam
 
 ## Estrutura de pastas (exemplo)
 //Extensão FileTree Pro usada para gerar a árvore do projeto
+```bash
 
 ├── 📁 middlewares/
 │   └── 📄 auth.ts
