@@ -1,6 +1,6 @@
-# 🔐 API de Autenticação com Express, TypeScript, MongoDB e Prisma
+# API de Autenticação com Express, TypeScript, MongoDB e Prisma
 
-## 🧩 Sobre o projeto
+## Sobre o projeto
 
 Esta é uma **API RESTful** construída com **Node.js**, **Express** e **TypeScript**, utilizando o **Prisma ORM** para comunicação com o **MongoDB**.
 
@@ -9,7 +9,7 @@ As senhas são **criptografadas com bcrypt**, garantindo segurança no armazenam
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **Node.js** – Ambiente de execução JavaScript no servidor  
 - **Express** – Framework para criação de rotas e middlewares  
@@ -22,7 +22,7 @@ As senhas são **criptografadas com bcrypt**, garantindo segurança no armazenam
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - ✅ **Cadastro de usuário** (`POST /cadastro`)  
   Cria um novo usuário com nome, e-mail e senha criptografada.
@@ -38,7 +38,7 @@ As senhas são **criptografadas com bcrypt**, garantindo segurança no armazenam
 
 ---
 
-## 🧠 Boas práticas aplicadas
+## Boas práticas aplicadas
 
 - Estrutura modular e organizada  
 - Separação clara entre **rotas** e **middlewares**  
@@ -47,3 +47,51 @@ As senhas são **criptografadas com bcrypt**, garantindo segurança no armazenam
 - Tratamento de erros com `try/catch`  
 - Omissão de senhas nas respostas da API  
 - Variáveis sensíveis protegidas via `.env`
+
+## Estrutura de pastas (exemplo)
+//Extensão FileTree Pro usada para gerar a árvore do projeto
+
+├── 📁 middlewares/
+│   └── 📄 auth.ts
+├── 📁 prisma/
+│   └── 📄 schema.prisma
+├── 📁 src/
+│   ├── 📁 routes/
+│   │   ├── 📄 private.ts
+│   │   └── 📄 public.ts
+│   ├── 📁 types/
+│   │   └── 📄 express.d.ts
+│   └── 📄 server.ts
+├── ⚙️ .gitignore
+├── 📝 README.md
+├── ⚙️ package-lock.json
+├── ⚙️ package.json
+├── 📄 prisma.config.ts
+└── ⚙️ tsconfig.json
+
+
+---
+
+## Como executar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/nome-do-projeto.git
+
+# Acesse o diretório
+cd nome-do-projeto
+
+# Instale as dependências
+npm install
+
+# Configure as variáveis de ambiente
+cp .env.example .env
+
+# Gere o cliente Prisma
+npx prisma generate
+
+# Inicie o servidor
+npm run dev
+
+A API estará disponível em: 
+http://localhost:3000
